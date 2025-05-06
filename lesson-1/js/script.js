@@ -31,8 +31,9 @@ em.addEventListener('click', updateName);
 function updateName() {
     console.log('The EM element was clicked!');
     // STEP 4a: Display a prompt asking for input, and assign the input to a variable using let
-
+    let firstName = prompt('What is your name?');
     // STEP 4b: Grab the input from the variable and build a new string, then change the text inside the EM element, using the textContent property
+    em.textContent = firstName;
 }
 // STEP 5: Comment out the addEventListener above, and replace it with an onclick attribute typed directly into the EM element in the HTML - note that this is common, but it is considered to be bad practice - separate your HTML and your JS
 
