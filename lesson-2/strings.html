@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title>Strings | COMP1073 Client-Side JavaScript</title>
-	<link href="css/styles.css" rel="stylesheet" />
+    <meta charset="utf-8"/>
+    <title>Strings | COMP1073 Client-Side JavaScript</title>
+    <link href="css/styles.css" rel="stylesheet"/>
 </head>
 
 <body>
-	<h1>Strings</h1>
-	<p></p>
+<h1>Strings</h1>
+<p></p>
 </body>
 <script>
     const output = document.querySelector('p');
-    
-    /* STEP 1: Creating Strings */
 
-    
+    /* STEP 1: Creating Strings */
+    let step1 = "This is a string"; // this is a string
+    output.textContent = step1
+
+
     // Note - whether you use 'single' or "double" quotes is a personal preference - try to be consistent
 
     /* STEP 2: Escaping Characters */
-
+    let step2 = "This is a string with \"escaped\" characters"; // this is a string with "escaped" characters
+    console.log(step2);
 
     /* STEP 3: Concatenation */
-
+    let step3a="javascript";
+    let step3b="rocks";
+    console.log(step3a + " " + step3b); // javascript rocks
+    //with backticks
+    let step3c=`${step3a} ${step3b}!`;
+    console.log(step3c); // javascript rocks!
 
     /* STEP 4: Numbers and Strings */
+    let step4a = "fahrenheit " + 415;
+    console.log(step4a); // fahrenheit415
 
     // numbers can be converted to strings
+    let step4b = 415 ;
+    let step4c = step4b.toString();
+    // or
+    let step4d = String(step4b);
+    console.log(typeof (step4c)); // 415
+    console.log(typeof (step4d)); // 415
 
     // strings can be converted to numbers, too
-
+    let step4e = "415";
+    let step4f = parseInt(step4e)
+    // or
+    let step4g = Number(step4e);
+    console.log(typeof (step4f)); // 415
+    console.log(typeof (step4g)); // 415
     // and back again, if we want
 
 
