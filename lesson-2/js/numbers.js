@@ -46,3 +46,6 @@ console.log(step3); // 6
 /* STEP 5: Comparison Operators
 ===	(strict equality), !==	(strict-non-equality), == (equality), < (less than), > (greater than), <= (less than or equal to), >=	(greater than or equal to) */
 
+let myNum = 17
+myNum++
+console.log(myNum)
